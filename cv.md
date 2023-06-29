@@ -16,3 +16,7 @@ In addition, I professionally transcribe and format music lyrics and write annot
 
 ## Education:
 `BSUIR` — `Faculty of Computer Technologies (FIC), 2020-2024`
+
+## Languages:
+Russian — native
+English — B1
