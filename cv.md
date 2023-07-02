@@ -36,6 +36,53 @@ In addition, I professionally transcribe and format music lyrics and write annot
 * Adobe Photoshop / Figma
 * VS Code, IntelliJ IDEA, Visual Studio
 
+## Code Example
+```c#
+public static void Load(DataGridView dataGridView, string dbString, string query, int columnsMode) {
+  try {
+    using(cc.con = new SQLiteConnection(dbString)) {
+      cc.con.Open();
+      using(cc.cmd = new SQLiteCommand(query, cc.con)) {
+        using(cc.rdr = cc.cmd.ExecuteReader()) {
+          dataGridView.Rows.Clear();
+          dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+          while (cc.rdr.Read()) {
+            object[] array = new object[] {};
+            for (int i = 0; i < dataGridView.Columns.Count; i++) {
+              array = array.Concat(new object[] {
+                cc.rdr[i]
+              }).ToArray();
+            }
+            dataGridView.Rows.Add(string.Join(",", array).Split(','));
+          }
+          dataGridView.ClearSelection();
+          switch (columnsMode) {
+          case 0:
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            break;
+          case 1:
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            break;
+          case 2:
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            break;
+          case 3:
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            break;
+          case 4:
+            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            break;
+          }
+        }
+      }
+    }
+  }
+  catch(Exception ex) {
+    MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+  }
+}
+```
+
 ## Education
 * **Belarusian State University of Informatics and Radioelectronics**
   * Faculty of Computer Technologies
