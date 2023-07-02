@@ -37,7 +37,8 @@ In addition, I professionally transcribe and format music lyrics and write annot
 * VS Code, IntelliJ IDEA, Visual Studio
 
 ## Education:
-`BSUIR` — `Faculty of Computer Technologies (FIC), 2020-2024`
+* **Belarusian State University of Informatics and Radioelectronics**
+  * Faculty of Computer Technologies
 
 ## Languages:
 Russian — native
