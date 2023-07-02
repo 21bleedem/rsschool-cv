@@ -88,6 +88,5 @@ public static void Load(DataGridView dataGridView, string dbString, string query
   * Faculty of Computer Technologies
 
 ## Languages
-Russian — native
-
-English — B1
+* **Russian** - native
+* **English** - B1
