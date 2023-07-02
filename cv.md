@@ -14,6 +14,28 @@ I'm studying at BSUIR. I enjoy creating websites, desktop & web applications. I 
 
 In addition, I professionally transcribe and format music lyrics and write annotations according to the strict standards of the Genius site. The main genres I work with are West Coast and Cali Rap.
 
+## Skills:
+**🌝 Frontend:**
+* TypeScript
+* NextJS / ReactJS
+* SCSS / styled-components / PostCSS
+* Twitter Bootstrap / Ant Design / Tailwind CSS
+* Webpack / Gulp
+* ESLint / Prettier
+
+**🌚 Backend:**
+* Node.JS / C# / Java
+* Thymeleaf
+* Spring Boot / ASP.NET / Express
+* TypeORM / Hibernate
+* Oracle / MySQL / Microsoft SQL Server / PostgreSQL / MongoDB
+* JWT / Session / PassportJS
+
+**✍️  Other:**
+* Git / GitHub
+* Adobe Photoshop / Figma
+* VS Code, IntelliJ IDEA, Visual Studio
+
 ## Education:
 `BSUIR` — `Faculty of Computer Technologies (FIC), 2020-2024`
 
